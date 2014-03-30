@@ -1,3 +1,13 @@
 Permutation:
 	1. Recursion
 		a. Permutation - no duplicates	(recursion - help function - add start and end pos)
+		b. Permutation II - with duplicates	(similar as a., but adding a noswap bool function)
+	2. Lexicography: 
+		Next Permutation
+		
+Combination:
+	1. Subsets
+		a. Subsets - no duplicates	(smart iteration)
+		b. Subsets II - with duplicates	(determine how many times to push)
+	2. Get k out of n
+		Combinations	(recursion - helper function)
