@@ -1,0 +1,20 @@
+Tree:
+	1. special trees
+		a. symmetric
+		b. balanced
+		c. BST - see 3
+	2. traversal
+    	a. inorder
+    	b. preorder
+    	c. postorder
+    	d. level order  (BFS)
+  	   	e. construct with inorder and preorder/postorder   (recursion) (helper function)
+    3. BST
+    	a. validate		(recursion) (helper function+border)
+    	b. convert sorted array/list to BST	(recursion: left and righ half)
+    4. LCA (see BTree.h)
+    	a. for BST
+    	b. for BTree without parent function
+    	c. for BTree with parent function
+    5. Path Sum II		(helper function recursion: change value at argument)
+    6. Flatten Binary Tree to Linked List	(use a variable to keep record - rightmost)
