@@ -1,0 +1,3 @@
+Permutation:
+	1. Recursion
+		a. Permutation - no duplicates	(recursion - help function - add start and end pos)
