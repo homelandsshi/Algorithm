@@ -1,0 +1,23 @@
+swapTwo(int &a, int &b) {
+	a = a + b;
+	b = a - b;	// (a + b) - b = a
+	a = a - b;	// (a + b) - a = b
+}
+
+swapThree(int &a, int &b, int &c) {
+	a = a + b;
+	b = b + c;
+	c = a + c - b;	// (a + b) + c - (b + c) = a;
+	a = a - c;		// (a + b) - a = b;
+	b = b - a;		// (b + c) - b = c;
+}
+
+swapFour(int &a, int &b, int &c, int &d) {
+	a = a + b;
+	b = b + c;
+	c = c + d;
+	d = a + c - b - d;	// (a + b) + (c + d) - (b + c) - d = a;
+	a = a - d;			// (a + b) - a = b;
+	b = b - a;			// (b + c) - b = c;
+	c = c - b;			// (c + d) - c = d;
+}
