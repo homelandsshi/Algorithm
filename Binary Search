@@ -1,0 +1,35 @@
+// C++
+std::binary_search(v.begin(), v.end(), x, [comp])
+
+bool binarySearch(vector<int> v, int value) {
+	int left = 0;
+	int right = v.size() - 1;
+
+    while (left <= right) {
+        int middle = (left + right) / 2;
+        if (v[middle] == value)
+            return true;
+        if (arr[middle] > value)
+            right = middle - 1;
+        else
+            left = middle + 1;
+    }
+    return false;
+}
+
+
+# Python
+def binarySearch(alist, item):
+    first = 0
+    last = len(alist) - 1
+
+    while first <= last:
+        midpoint = (first + last) / 2      # integer division: Python 2 - int / int; Python 3 - int // int
+        if alist[midpoint] == item:
+            return True
+        if item < alist[midpoint]:
+            last = midpoint - 1
+        else:
+            first = midpoint + 1
+
+    return False
