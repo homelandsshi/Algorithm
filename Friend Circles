@@ -1,3 +1,5 @@
+#include <queue>
+#include <vector>
 using namespace std;
 
 int friendCircles(const vector<string> & M)
@@ -36,9 +38,9 @@ void bfs( int & result, vector<bool> & visited, const vector<string> & M, int i 
 		if (visited[cur]) continue;
 		visited[cur] = true;
 		
-		for (int j = i + 1; j < n; ++j)
+		for (int j = 0; j < M.size(); ++j)
 		{
-			if (M[i][j] == 'Y' && !visited[j])
+			if (cur != j && M[cur][j] == 'Y' && !visited[j])
 			{
 				queue.push(j);
 			}
