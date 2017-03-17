@@ -47,3 +47,16 @@ void bfs( int & result, vector<bool> & visited, const vector<string> & M, int i 
 		}
 	}
 }
+
+int main() {
+    int num;
+    cin >> num;
+    vector<string> friends;
+    string inputLine;
+    for (int i=0; i<num && cin; ++i) {
+        cin >> inputLine;
+        friends.push_back(input_line);
+    };
+    cout << friendCircles(friends) << endl;
+    return 0;
+}
